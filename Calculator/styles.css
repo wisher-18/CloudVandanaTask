@@ -1,0 +1,30 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button{
+    color: white;
+    margin: 0;
+    width: 100px;
+    padding: 20px;
+    cursor: pointer;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px
+}
+
+.row{
+    display: flex;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+.row input{
+    border-width: 0px;
+    padding: 10px 41px;
+    font-size: 18px;
+
+}

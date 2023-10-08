@@ -1,0 +1,32 @@
+.text-center{
+    text-align: center;
+}
+
+.bg-grey{
+    background: gray;
+}
+
+
+.flex{
+    display: flex;
+    padding: 20px;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+}
+
+#green-btn{
+    background-color: rgba(84, 167, 160, 0.979);
+}
+
+.row button{
+    background-color: rgba(0, 0, 0, 0.679);
+}
+
+#symbol{
+    background-color: rgba(7, 1, 1, 0.112);
+}
