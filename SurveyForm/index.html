@@ -5,9 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Survey Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1 style="text-align: center;">Customer Survey Form</h1>
-    
+    <div class="container">
+        <form id="surveyForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" required>
+            <option value="">Select a country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="India">India</option>
+        </select><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required> <label for="female">Female</label><br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" required><br><br>
+
+        <p>Is this your first time using our products and services?</p>
+        <input type="radio" id="firstTimeYes" name="firstTime" value="Yes" required> <label for="firstTimeYes">Yes</label>
+        <input type="radio" id="firstTimeNo" name="firstTime" value="No" required> <label for="firstTimeNo">No</label><br><br>
+
+        <p>Would you suggest our products and services to your friends and colleagues?</p>
+        <input type="radio" id="suggestionYes" name="suggestion" value="Yes" required> <label for="suggestionYes">Yes</label>
+        <input type="radio" id="suggestionNo" name="suggestion" value="No" required> <label for="suggestionNo">No</label><br><br>
+
+        <p>How satisfied are you with our company overall?</p>
+        <input type="radio" id="satisfactionSatisfied" name="satisfaction" value="Satisfied" required> <label for="satisfactionSatisfied">Satisfied</label>
+        <input type="radio" id="satisfactionUndecided" name="satisfaction" value="Undecided" required> <label for="satisfactionUndecided">Undecided</label>
+        <input type="radio" id="satisfactionUnsatisfied" name="satisfaction" value="Unsatisfied" required> <label for="satisfactionUnsatisfied">Unsatisfied</label><br><br>
+
+        <p>Do you have any suggestions to improve our service?</p>
+        <textarea id="suggestions" rows="4" cols="50"></textarea><br><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+    </form>
+</div>
+
+
+    <script src="app.js"></script>
 </body>
 </html>
